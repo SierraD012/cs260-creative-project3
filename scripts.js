@@ -1,4 +1,10 @@
 angular.module('mainActivityList', [])
+
+.factory('coolPlaces', function () {
+    var jsonFile = localStorage('data');
+    
+})
+
 .controller('mainController', mainCtrl)
 //.directive('activity', activityDirective);  //maybe use this to populate the list of activities once category is selected 
   
