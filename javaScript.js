@@ -4,7 +4,7 @@ app.controller('mainController', function($scope) {
     $.ajaxSetup({
         async: false
     });
-    var data = $.getJSON("exampleObjectList.js", data, function(data) {
+    var data = $.getJSON("data.json", data, function(data) {
             console.log(data);
         })
         .done(function(data) {
@@ -16,43 +16,30 @@ app.controller('mainController', function($scope) {
             })
             console.log("should still get here");
             afterDataRetrieval($scope, parsed);
+        })
+        .fail(function(){
+            console.log("Something went wrong loading the file.");
         });
 });
 
 function afterDataRetrieval($scope, parsed){
     console.log("We are in the new function");
-    $scope.activities = parsed;
+   // $scope.activities = parsed;
 
     $scope.addNewActivity = function(activity) {
         console.log(">AddNewActivity: called")
         
-        $scope.activities.push({
-            title: activity.title,
-            category: activity.category, //enum or dropdown
-            description: activity.description,
-            imgURL: activity.imgURL
-        });
+        var newActivity = {
+            name: activity.name,
+            category: activity.category,
+            imageUrl: activity.imageUrl,
+            description: activity.description
+        }
+        
+        parsed.push(newActivity);
 
-        console.log(">ActivitiesList length= " + $scope.activities.length);
+        console.log(">ActivitiesList length= " + parsed.length);
     };
 }
 
 
-function mainCtrl($scope) {
-
-    $scope.activities = [];
-
-    $scope.addNewActivity = function(activity) {
-        console.log(">AddNewActivity: called")
-        //put this in a factory
-        $scope.activities.push({
-            title: activity.title,
-            category: activity.category, //enum or dropdown
-            description: activity.description,
-            imgURL: activity.imgURL
-        });
-
-        console.log(">ActivitiesList length= " + $scope.activities.length);
-    };
-
-}

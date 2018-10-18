@@ -16,7 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
     <script type="text/javascript" src="data.json"></script>
-    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="javaScript.js"></script>
 
 
     <title>Cool Stuff in Provo</title>
@@ -84,8 +84,8 @@
                         <input class="column" placeholder='Name' ng-model='newActivityForm.name' />
                         <!-- The category should preferrably be a drop down menu, so they can't type just anything in.-->
                         <input class="column" placeholder='Category' ng-model='newActivityForm.category' />
-                        <input class="column" placeholder='Description' ng-model='newActivityForm.email' />
-                        <input class="column" placeholder='Image URL' ng-model='newActivityForm.url' />
+                        <input class="column" placeholder='Image URL' ng-model='newActivityForm.imageUrl' />
+                        <input class="column" placeholder='Description' ng-model='newActivityForm.description' />
                         <button class='btn btn-primary' type='submit'>Add New Activity</button>
                     </form>
                 </div>
