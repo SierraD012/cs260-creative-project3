@@ -10,10 +10,10 @@ angular.module('mainActivityList', [])
         })
 
 
-    .controller('mainController', [mainCtrl, '$scope', 'coolPlaces', function ($scope, coolPlaces){
+    .controller('mainController', function ($scope, coolPlaces, mainCtrl){
         $scope.test = coolPlaces.data;
         console.log($scope.test);
-        
+        mainCtrl($scope);
     }])
 //.directive('activity', activityDirective);  //maybe use this to populate the list of activities once category is selected 
 
