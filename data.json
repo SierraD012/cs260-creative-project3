@@ -1,18 +1,9 @@
 [
      {
-        "nameOfPlace" : " ",
+        "nameOfPlace" : "Quarry",
         "gps_location": " ",
-        "category": ["date", "outdoors", "indoors", "etc"],
+        "category": ["rock climbing"],
         "picture_url": " ",
-        "description": " ",
-        "rating": ,
-    },
-    {
-        
+        "description": "The place to go rock climbing",
     }
-    
-    
-    
-    
-    
 ]
