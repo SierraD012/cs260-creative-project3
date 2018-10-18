@@ -23,6 +23,7 @@
 
 
 <div class="background-image"></div>
+
 <body class="content">
 
 
@@ -35,7 +36,7 @@
         <a href="#">Sports/Games</a>
         <a href="#">Classic Provo</a>
 
-        <a class="bottom" color="red" href="#">Add New Activity</a>
+        <!--<a class="bottom" color="red" href="#">Add New Activity</a>-->
 
     </div>
 
@@ -53,13 +54,17 @@
         <p>Are you bored in Provo? Select a category for info on lots of activities in Provo and surrounding areas!</p>
 
 
+        <div class = "changeable">
+            <!-- This is where we will load the content of our page.-->
 
-        <div ng-app="mainActivityList" ng-controller='mainController'>
+        </div>
+
+        <footer class="footer" ng-app="mainActivityList" ng-controller='mainController'>
+
+
+            <!-- Whenever we click on a link, we will change the html and everything inside of changeable. -->
 
         
-            <!-- Whenever we click on a link, we will change the html and everything inside of changeable. --> 
-
-            <div class="changeable">
                 <!-- Idea:
             Make an informative webpage about cool stuff to do around provo/utah valley: 
              - make it interactive so users can add their own ideas too - this is perfect for Angular!
@@ -84,8 +89,9 @@
                     </form>
                 </div>
 
-            </div>
-        </div>
+        </footer>
+
+
 </body>
 
 </html>
