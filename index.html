@@ -24,13 +24,31 @@
 
 <body>
 
-    <h1>Cool Stuff to Do Around Provo</h1>
-    <p>Are you bored in Provo? Select a category for info on lots of activities in Provo and surrounding areas!</p>
+
+    <div class="sidenav">
+        <a href="#">Add</a>
+        <a href="#">Options</a>
+        <a href="#">Here</a>
+        <a href="#">:)</a>
+    </div>
+
+    <div class="main">
 
 
-    <div ng-app="mainActivityList" ng-controller='mainController'>
 
-        <!-- Idea:
+        <div class="jumbotron">
+            <h1>Cool Stuff to Do Around Provo</h1>
+            <h3><small>The Best Guide Ever</small></h3>
+        </div>
+        
+
+
+        <p>Are you bored in Provo? Select a category for info on lots of activities in Provo and surrounding areas!</p>
+
+
+        <div ng-app="mainActivityList" ng-controller='mainController'>
+
+            <!-- Idea:
             Make an informative webpage about cool stuff to do around provo/utah valley: 
              - make it interactive so users can add their own ideas too - this is perfect for Angular!
              - lots of cool pictures, maybe some maps if we can get google maps api to work 
@@ -39,19 +57,19 @@
              - References: https://vacationidea.com/destinations/best-things-to-do-in-provo-ut.html
                            https://pedalprovo.com/18-awesome-things-to-do-in-provo-in-2018-an-insiders-guide/
              -->
-        <div class="col-xs-12 col-sm-offset-2 col-sm-8">
-            <hr>
-            <h2>Add New Activity</h2>
-            <form name='userForm' ng-submit='addNewActivity(newActivityForm)'>
-                <input placeholder='Name' ng-model='newActivityForm.name' />
-                <input placeholder='Category' ng-model='newActivityForm.category' />
-                <input placeholder='Description' ng-model='newActivityForm.email' />
-                <input placeholder='Image URL' ng-model='newActivityForm.url' />
-                <button class='btn btn-primary' type='submit'>Add New Activity</button>
-            </form>
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8">
+                <hr>
+                <h2>Add New Activity</h2>
+                <form name='userForm' ng-submit='addNewActivity(newActivityForm)'>
+                    <input placeholder='Name' ng-model='newActivityForm.name' />
+                    <input placeholder='Category' ng-model='newActivityForm.category' />
+                    <input placeholder='Description' ng-model='newActivityForm.email' />
+                    <input placeholder='Image URL' ng-model='newActivityForm.url' />
+                    <button class='btn btn-primary' type='submit'>Add New Activity</button>
+                </form>
+            </div>
+
         </div>
-
-
 </body>
 
 </html>
