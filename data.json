@@ -1,9 +1,27 @@
-[
-     {
-        "nameOfPlace" : "Quarry",
-        "gps_location": " ",
-        "category": ["rock climbing"],
-        "picture_url": " ",
-        "description": "The place to go rock climbing",
-    }
-]
+{
+     "objects": [ 
+        {
+            "name" : "Quarry",
+            "category": "Sports/Games",
+            "link": "https://quarryclimbing.com/",
+            "imageUrl": "https://www.provo-utah.us/uploads/7/8/6/6/7866822/dsc-0521_orig.jpg",
+            "description": "One of the most popular indoor climbing venues in Utah Valley",
+        },
+        {
+            "name" : "Sundance",
+            "category": "Outdoors",
+            "link": "https://www.sundanceresort.com/",
+            "imageUrl": "https://outdoorfamiliesonline.com/wp-content/uploads/img_0729.jpg",
+            "description": "Ski resort, mountain biking, and expensive hotel",
+        },
+        {
+            "name" : "Art After Dark",
+            "category": "Artsy",
+            "link": "https://moa.byu.edu/events/art-after-dark-5/",
+            "imageUrl": "",
+            "description": "Free art show event at the BYU MOA with music and refreshments",
+        },
+    
+    
+    ]
+}
