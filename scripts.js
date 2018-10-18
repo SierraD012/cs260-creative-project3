@@ -2,7 +2,7 @@ angular.module('mainActivityList', [])
 
     .factory('coolPlaces',
         function() {
-            console.out("factory function");
+            console.log("factory function");
             $.getJSON("exampleObjectList.js", function(json) {
                 var data = JSON.parse(json);
                 console.log(data);
@@ -10,11 +10,17 @@ angular.module('mainActivityList', [])
         })
 
 
-    .controller('mainController', function ($scope, coolPlaces, mainCtrl){
-        $scope.test = coolPlaces.data;
+    .controller('mainController', function ($scope){
+        $scope.test = function() {
+            console.log("factory function");
+            $.getJSON("exampleObjectList.js", function(json) {
+                
+                return json;
+            });
+        }
+        $scope.test = $scope.test();
         console.log($scope.test);
-        mainCtrl($scope);
-    }])
+    })
 //.directive('activity', activityDirective);  //maybe use this to populate the list of activities once category is selected 
 
 function mainCtrl($scope) {
