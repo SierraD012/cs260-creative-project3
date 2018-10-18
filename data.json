@@ -5,23 +5,120 @@
             "category": "Sports/Games",
             "link": "https://quarryclimbing.com/",
             "imageUrl": "https://www.provo-utah.us/uploads/7/8/6/6/7866822/dsc-0521_orig.jpg",
-            "description": "One of the most popular indoor climbing venues in Utah Valley",
+            "description": "One of the most popular indoor climbing venues in Utah Valley"
         },
+        {
+            "name" : "Virtual Experience",
+            "category": "Sports/Games",
+            "link": "https://www.vearcade.com/",
+            "imageUrl": "https://s3-media4.fl.yelpcdn.com/bphoto/zegpzIvgNMo471jO1Ok2QA/348s.jpg",
+            "description": "Virtual Reality arcade on Center Street"
+        },
+        {
+            "name" : "Get Out Games",
+            "category": "Sports/Games",
+            "link": "https://getoutgames.com/",
+            "imageUrl": "https://media-cdn.tripadvisor.com/media/photo-s/07/df/dd/07/getout-games.jpg",
+            "description": "Popular escape room venue with one room involving a zombie on a chain"
+        },
+        {
+            "name" : "Provo Rec Center",
+            "category": "Sports/Games",
+            "link": "https://www.provo.org/community/recreation-center",
+            "imageUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/crm/utahvalley/ShowImage0_309246e7-5056-a36a-0b02f14c156a770b.jpg",
+            "description": "State-of-the-art recreation center with indoor track, pool, gym, and multiple basketball/raquetball courts"
+        },
+        
+        
         {
             "name" : "Sundance",
             "category": "Outdoors",
             "link": "https://www.sundanceresort.com/",
             "imageUrl": "https://outdoorfamiliesonline.com/wp-content/uploads/img_0729.jpg",
-            "description": "Ski resort, mountain biking, and expensive hotel",
+            "description": "Ski resort, mountain biking, and expensive hotel"
+        },        
+        {
+            "name" : "Bridal Veil Falls",
+            "category": "Outdoors",
+            "link": "https://www.utahvalley.com/listing/bridal-veil-falls/41/",
+            "imageUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/crm/utahvalley/Bridal-Veil-Falls-2-_304529a2-5056-a36a-0b62b30cae6d83cb.jpg",
+            "description": "Short, easy hike to a picturesque waterfall"
         },
+        {
+            "name" : "Rock Canyon Climbing",
+            "category": "Outdoors",
+            "link": "https://www.mountainproject.com/area/105739292/rock-canyon",
+            "imageUrl": "http://rockcanyonutah.com/wp-content/gallery/images/thumbs_climbing.jpg",
+            "description": "Wide variety of rock climbing routes all throughout the canyon"
+        },
+        {
+            "name" : "High Country Adventure",
+            "category": "Outdoors",
+            "link": "https://highcountryadventure.com/",
+            "imageUrl": "https://highcountryadventure.com/default/assets/File/provorafting.jpg",
+            "description": "River rafting, horseback riding, tubing, ziplines, and overall awesome"
+        },
+        
+        
         {
             "name" : "Art After Dark",
             "category": "Artsy",
             "link": "https://moa.byu.edu/events/art-after-dark-5/",
             "imageUrl": "https://universe.byu.edu/wp-content/uploads/2016/10/IMG_1400-1024x683.jpg",
-            "description": "Free art show event at the BYU MOA with music and refreshments",
+            "description": "Free art show event at the BYU MOA with music and refreshments"
         },
+        {
+            "name" : "Covey Center for the Arts",
+            "category": "Artsy",
+            "link": "https://www.provo.org/community/covey-center-for-the-arts",
+            "imageUrl": "https://api.trekaroo.com//system/photos/79918/original/Covey.jpg?1493792009",
+            "description": "Live performanes, dance classes, and art galleries"
+        },
+        {
+            "name" : "Utah Valley Symphony",
+            "category": "Artsy",
+            "link": "https://www.utahvalleysymphony.org/",
+            "imageUrl": "https://i.ytimg.com/vi/jm1cAtvcUkY/hqdefault.jpg",
+            "description": "Nonprofit orchestra performing regularly at the Covey Center"
+        },
+        {
+            "name" : "BYU Museum of Peoples & Cultures",
+            "category": "Artsy",
+            "link": "http://mpc.byu.edu/",
+            "imageUrl": "https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/18671805_10155167254533046_747637797462086733_o.jpg?_nc_cat=104&oh=944379f75088f9ed3715755c1a5b9d5a&oe=5C4855DF",
+            "description": "Museum featuring artifacts from across the world"
+        },
+        
     
+    
+        {
+            "name" : "Good Move Cafe",
+            "category": "Food",
+            "link": "http://goodmovecafe.com/",
+            "imageUrl": "https://pedalprovo.com/wp-content/uploads/2017/02/Good-Move-Cafe-Edited.jpg",
+            "description": "Great food and a massive selection of board games to play while you eat"
+        },
+        {
+            "name" : "Rockwell Ice Cream",
+            "category": "Food",
+            "link": "https://www.rockwellicecream.com/",
+            "imageUrl": "https://bloximages.chicago2.vip.townnews.com/heraldextra.com/content/tncms/assets/v3/editorial/8/3c/83c112d9-e8f0-50d6-9d73-470710e9261a/574b6741402bc.image.jpg?resize=1200%2C800",
+            "description": "Old-fashioned creamery good enough to rival the BYU Creamery"
+        },
+        {
+            "name" : "Sodalicious",
+            "category": "Food",
+            "link": "https://www.mysodalicious.com/",
+            "imageUrl": "https://static1.squarespace.com/static/59139c073a041182fc0a51c5/t/59fb49b56c31942be4884f85/1509640115444/SodaliciousSMALL-35+%281%29.jpg?format=2500w",
+            "description": "Soda shop with dozens of customizable flavors and mixes, and life-changing cookies"
+        },
+        {
+            "name" : "Don Joaquin",
+            "category": "Food",
+            "link": "https://www.yelp.com/biz/street-tacos-don-joaquin-provo-3",
+            "imageUrl": "https://s3-media2.fl.yelpcdn.com/bphoto/gPiczJT_zbveFidIhnT1YQ/o.jpg",
+            "description": "Amazing, authentic street tacos, open late"
+        }
     
     ]
 }
