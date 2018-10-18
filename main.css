@@ -57,9 +57,9 @@ body {
 /* The navigation menu links */
 
 .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 10px 6px 14px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     color: #818181;
     display: block;
 }
@@ -71,8 +71,9 @@ body {
 }
 
 .sidenav .bottom {
-    position: absolute;
-    bottom: 0;
+    position:absolute;
+    bottom:0;
+    color: yellow;
 }
 
 /* Style page content */
