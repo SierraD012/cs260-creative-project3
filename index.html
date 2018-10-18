@@ -18,11 +18,13 @@
     <script type="text/javascript" src="data.json"></script>
     <script type="text/javascript" src="scripts.js"></script>
 
-    <title>Creative <Projec></Projec>t 3</title>
+    <title>Creative
+        <Projec></Projec>t 3</title>
 </head>
 
 
 <div class="background-image"></div>
+
 <body class="content">
 
 
@@ -53,11 +55,17 @@
         <p>Are you bored in Provo? Select a category for info on lots of activities in Provo and surrounding areas!</p>
 
 
+        <div>
+            <!-- This is where we will load the content of our page.-->
+            
+        </div>
+      
+    </div>
+    
+      <footer class="footer" ng-app="mainActivityList" ng-controller='mainController'>
 
-        <div ng-app="mainActivityList" ng-controller='mainController'>
 
-        
-            <!-- Whenever we click on a link, we will change the html and everything inside of changeable. --> 
+            <!-- Whenever we click on a link, we will change the html and everything inside of changeable. -->
 
             <div class="changeable">
                 <!-- Idea:
@@ -84,8 +92,7 @@
                     </form>
                 </div>
 
-            </div>
-        </div>
+            </footer>
 </body>
 
 </html>
