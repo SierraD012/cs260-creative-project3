@@ -18,22 +18,26 @@
     <script type="text/javascript" src="data.json"></script>
     <script type="text/javascript" src="scripts.js"></script>
 
-    <title>Creative Project 3</title>
+
+    <title>Cool Stuff in Provo</title>
 </head>
 
-<body>
+
+<div class="background-image"></div>
+
+<body class="content">
 
 
     <div class="sidenav">
         <!-- All we HAVE to do is hook up the links-->
         <!-- We could make these with an angular directive, then allow the user to create new categories -->
-        <a href="#">Biking</a>
-        <a href="#">Rock Climbing</a>
-        <a href="#">Painting</a>
-        <a href="#">Gaming</a>
-        <a href="#">Hiking</a>
+        <a href="#">Outdoors</a>
+        <a href="#">Food</a>
+        <a href="#">Artsy</a>
+        <a href="#">Sports/Games</a>
+        <a href="#">Classic Provo</a>
 
-        <a class="bottom" href="#">Add New Activity</a>
+        <!--<a class="bottom" color="red" href="#">Add New Activity</a>-->
 
     </div>
 
@@ -51,13 +55,17 @@
         <p>Are you bored in Provo? Select a category for info on lots of activities in Provo and surrounding areas!</p>
 
 
+        <div class = "changeable">
+            <!-- This is where we will load the content of our page.-->
 
-        <div ng-app="mainActivityList" ng-controller='mainController'>
+        </div>
+
+        <footer class="footer" ng-app="mainActivityList" ng-controller='mainController'>
+
+
+            <!-- Whenever we click on a link, we will change the html and everything inside of changeable. -->
 
         
-            <!-- Whenever we click on a link, we will change the html and everything inside of changeable. --> 
-
-            <div class="changeable">
                 <!-- Idea:
             Make an informative webpage about cool stuff to do around provo/utah valley: 
              - make it interactive so users can add their own ideas too - this is perfect for Angular!
@@ -69,7 +77,7 @@
              -->
 
 
-
+                <hr>
                 <h2>Add New Activity</h2>
                 <div class="container">
                     <form name='userForm' ng-submit='addNewActivity(newActivityForm)'>
@@ -82,8 +90,9 @@
                     </form>
                 </div>
 
-            </div>
-        </div>
+        </footer>
+
+
 </body>
 
 </html>
