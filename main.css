@@ -31,6 +31,11 @@ body {
     color: #f1f1f1;
 }
 
+.sidenav .bottom {
+    position:absolute;
+    bottom:0;
+}
+
 /* Style page content */
 .main {
     margin-left: 160px; /* Same as the width of the sidebar */
