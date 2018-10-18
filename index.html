@@ -18,8 +18,8 @@
     <script type="text/javascript" src="data.json"></script>
     <script type="text/javascript" src="scripts.js"></script>
 
-    <title>Creative
-        <Projec></Projec>t 3</title>
+
+    <title>Cool Stuff in Provo</title>
 </head>
 
 
@@ -57,18 +57,16 @@
 
         <div>
             <!-- This is where we will load the content of our page.-->
-            
+
         </div>
-      
-    </div>
-    
-      <footer class="footer" ng-app="mainActivityList" ng-controller='mainController'>
+        
+            <footer class="footer" ng-app="mainActivityList" ng-controller='mainController'>
 
 
-            <!-- Whenever we click on a link, we will change the html and everything inside of changeable. -->
+        <!-- Whenever we click on a link, we will change the html and everything inside of changeable. -->
 
-            <div class="changeable">
-                <!-- Idea:
+        <div class="changeable">
+            <!-- Idea:
             Make an informative webpage about cool stuff to do around provo/utah valley: 
              - make it interactive so users can add their own ideas too - this is perfect for Angular!
              - lots of cool pictures, maybe some maps if we can get google maps api to work 
@@ -79,20 +77,24 @@
              -->
 
 
-                <hr>
-                <h2>Add New Activity</h2>
-                <div class="container">
-                    <form name='userForm' ng-submit='addNewActivity(newActivityForm)'>
-                        <input class="column" placeholder='Name' ng-model='newActivityForm.name' />
-                        <!-- The category should preferrably be a drop down menu, so they can't type just anything in.-->
-                        <input class="column" placeholder='Category' ng-model='newActivityForm.category' />
-                        <input class="column" placeholder='Description' ng-model='newActivityForm.email' />
-                        <input class="column" placeholder='Image URL' ng-model='newActivityForm.url' />
-                        <button class='btn btn-primary' type='submit'>Add New Activity</button>
-                    </form>
-                </div>
+            <hr>
+            <h2>Add New Activity</h2>
+            <div class="container">
+                <form name='userForm' ng-submit='addNewActivity(newActivityForm)'>
+                    <input class="column" placeholder='Name' ng-model='newActivityForm.name' />
+                    <!-- The category should preferrably be a drop down menu, so they can't type just anything in.-->
+                    <input class="column" placeholder='Category' ng-model='newActivityForm.category' />
+                    <input class="column" placeholder='Description' ng-model='newActivityForm.email' />
+                    <input class="column" placeholder='Image URL' ng-model='newActivityForm.url' />
+                    <button class='btn btn-primary' type='submit'>Add New Activity</button>
+                </form>
+            </div>
 
-            </footer>
+    </footer>
+
+    </div>
+
+
 </body>
 
 </html>
