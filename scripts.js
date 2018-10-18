@@ -1,7 +1,9 @@
 angular.module('mainActivityList', [])
 
 .factory('coolPlaces', function () {
-    var jsonFile = localStorage('data');
+    var jsonFileName = "data.json";
+
+    
     
 })
 
