@@ -25,14 +25,14 @@
 
 <body class="content"  ng-app="mainActivityList" ng-controller='mainController'>
 
-    <div class="sidenav">
+    <!--<div class="sidenav">-->
         <!-- Don't change these a href, that will mess with how it looks -->
-        <a href="" onClick="setCategory('Outdoors')">Outdoors</a>
-        <a href="">Food</a>
-        <a href="">Artsy</a>
-        <a href="">Sports/Games</a>
+    <!--    <a href="" onClick="setCategory('Outdoors')">Outdoors</a>-->
+    <!--    <a href="">Food</a>-->
+    <!--    <a href="">Artsy</a>-->
+    <!--    <a href="">Sports/Games</a>-->
         <!-- <a href="">Classic Provo</a> Add this one back in if we have time -->
-    </div>
+    <!--</div>-->
 
     <div class="main">
         <div class="jumbotron">  <!-- It'd be nice if we could make this thinner -->
@@ -45,28 +45,28 @@
         <div class="activityDisplay" >
             <div class="col-sm-offset-3 col-sm-9">
                 
-                    <li ng-repeat='activity in activities' class="list-group-item">  <!-- ng-repeat='activity in activities'-->
+                    <li ng-repeat='activity in activities' class='list-group-item'>  <!-- ng-repeat='activity in activities'-->
                         <!-- put activity Directive tag here-->
-                        <activities user='activity'>
+                        <activity activity='activity'>
                             
                     <!-- <div class="row">
                           <a href="https://quarryclimbing.com/" target="_blank">
-                              <img class="activity-img" ng-src="https://www.provo-utah.us/uploads/7/8/6/6/7866822/dsc-0521_orig.jpg" />
+                              <img class="activity-img" ng-src={{activity.imageUrl}} />
                             </a>
                           <div class="col">
-                              <span class="activity-name">Activity Title</span>
+                              <span class="activity-name">{{activity.name}}</span>
                               <br>
-                              <span class="activity-info">Activity Description</span>
+                              <span class="activity-info">{{activity.description}}</span>
                               <div class="clearfix"></div>
                             </div>
-                        </div> -->
+                        </div>-->
                         
                         <!-- end activity Directive tag -->
                     </li>
             </div>
         </div>
 
-
+        </br>
         <footer class="footer">
                 <hr>
                 <h2>Add New Activity</h2>
