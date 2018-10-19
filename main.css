@@ -33,7 +33,6 @@ body {
     margin-right: 20px;
 }
 
-
 /* The sidebar menu */
 
 .sidenav {
@@ -83,6 +82,9 @@ body {
     margin-left: 160px;
     /* Same as the width of the sidebar */
     padding: 0px 10px;
+    padding-bottom: 50px;
+    height: 52%; 
+    /*overflow-y: scroll;  /* adds scrollbar */
 }
 
 .activity-list {
@@ -94,6 +96,12 @@ body {
 .panel > .list-group .list-group-item {
     /* border-top: 1px solid rgb(204, 204, 204); */
     /*padding-left: 100px*/
+}
+
+.activityDisplay {
+    height: 100%; 
+    /*padding-bottom: 100px;*/
+    overflow-y: scroll;  /* adds scrollbar */
 }
 
 .activity-img {
@@ -128,9 +136,11 @@ body {
 
 .footer {
    position: fixed;
+   /*display: block;*/
    left: 0;
    bottom: 0;
    width: 100%;
+   /* height: 18%; */
    text-align: center;
-   padding-bottom: 10px;
+   /*padding-bottom: 10px;*/
 }

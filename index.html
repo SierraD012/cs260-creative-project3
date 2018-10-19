@@ -25,7 +25,7 @@
 
 <body class="content"  ng-app="mainActivityList" ng-controller='mainController'>
 
-    <div class="sidenav">
+    <div class="sidenav" height=>
         <!-- Don't change these a href, that will mess with how it looks -->
         <a href="" onClick="setCategory('Outdoors')">Outdoors</a>
         <a href="">Food</a>
@@ -45,28 +45,16 @@
         <div class="activityDisplay" >
             <div class="col-sm-offset-3 col-sm-9">
                 
-                    <li ng-repeat='activity in activities' class="list-group-item">  <!-- ng-repeat='activity in activities'-->
-                        <!-- put activity Directive tag here-->
-                        <activities user='activity'>
-                            
-                    <!-- <div class="row">
-                          <a href="https://quarryclimbing.com/" target="_blank">
-                              <img class="activity-img" ng-src="https://www.provo-utah.us/uploads/7/8/6/6/7866822/dsc-0521_orig.jpg" />
-                            </a>
-                          <div class="col">
-                              <span class="activity-name">Activity Title</span>
-                              <br>
-                              <span class="activity-info">Activity Description</span>
-                              <div class="clearfix"></div>
-                            </div>
-                        </div> -->
-                        
-                        <!-- end activity Directive tag -->
-                    </li>
+                    <ul class="list-group" id="activity_list" >
+                        <li ng-repeat='activity in activities' class="list-group-item">
+                            <activity activity='activity'>
+                        </li>
+                   </ul>
             </div>
         </div>
 
-
+        <br><br>
+    
         <footer class="footer">
                 <hr>
                 <h2>Add New Activity</h2>
@@ -84,9 +72,7 @@
                         <!-- <input class="column" placeholder='Category' ng-model='newActivityForm.category' /> Old version of category input-->
                         <input class="column" placeholder='Image URL' ng-model='newActivityForm.imageUrl' />
                         <input class="column" placeholder='Description' ng-model='newActivityForm.description' />
-                        <br>
-                        <br>
-                        <button class='btn btn-primary' type='submit'>Add New Activity</button>
+                        <button class='btn btn-small btn-primary' type='submit'>Add New Activity</button>
                     </form>
                 </div>
         </footer>
