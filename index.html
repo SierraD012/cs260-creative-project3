@@ -28,54 +28,44 @@
 
 
     <div class="sidenav">
-        <!-- All we HAVE to do is hook up the links-->
-        <!-- We could make these with an angular directive, then allow the user to create new categories -->
         <a href="#">Outdoors</a>
         <a href="#">Food</a>
         <a href="#">Artsy</a>
         <a href="#">Sports/Games</a>
         <a href="#">Classic Provo</a>
-
-        <!--<a class="bottom" color="red" href="#">Add New Activity</a>-->
-
     </div>
 
-    <div class="main">
-
-
-
-        <div class="jumbotron">
+    <div class="main" ng-app="mainActivityList" ng-controller='mainController'>
+        <div class="jumbotron">  <!-- It'd be nice if we could make this thinner -->
             <h1>Cool Stuff to Do Around Provo</h1>
             <h3><small>The Best Guide Ever</small></h3>
+            <p>Are you bored in Provo? Select a category for insider info on lots of activities in Provo and surrounding areas!</p>
         </div>
 
 
+        <div class="activityDisplay" >
 
-        <p>Are you bored in Provo? Select a category for info on lots of activities in Provo and surrounding areas!</p>
-
-
-        <div class = "changeable">
-            <!-- This is where we will load the content of our page.-->
-
+            <div class="col-sm-offset-3 col-sm-9">
+                    <!-- put activity Directive tag here-->
+                    <li class="list-group-item">
+                        <div class="row">
+                          <a href="https://quarryclimbing.com/" target="_blank">
+                              <img class="activity-img" ng-src="https://www.provo-utah.us/uploads/7/8/6/6/7866822/dsc-0521_orig.jpg" />
+                            </a>
+                          <div class="col">
+                              <span class="activity-name">ACTIVITY</span>
+                              <br>
+                              <span class="activity-info">INFO</span>
+                              <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- end activity Directive tag -->
+            </div>
         </div>
 
-        <footer class="footer" ng-app="mainActivityList" ng-controller='mainController'>
 
-
-            <!-- Whenever we click on a link, we will change the html and everything inside of changeable. -->
-
-        
-                <!-- Idea:
-            Make an informative webpage about cool stuff to do around provo/utah valley: 
-             - make it interactive so users can add their own ideas too - this is perfect for Angular!
-             - lots of cool pictures, maybe some maps if we can get google maps api to work 
-             - just a nice dynamic list of cool activities, like outdoors (climbing), indoors (center st), etc
-             - Let's just hard-code a bunch of activities with pictures and info, we can use stuff on these sites:
-             - References: https://vacationidea.com/destinations/best-things-to-do-in-provo-ut.html
-                           https://pedalprovo.com/18-awesome-things-to-do-in-provo-in-2018-an-insiders-guide/
-             -->
-
-
+        <footer class="footer">
                 <hr>
                 <h2>Add New Activity</h2>
                 <div class="container">
@@ -85,12 +75,14 @@
                         <input class="column" placeholder='Category' ng-model='newActivityForm.category' />
                         <input class="column" placeholder='Image URL' ng-model='newActivityForm.imageUrl' />
                         <input class="column" placeholder='Description' ng-model='newActivityForm.description' />
+                        <br>
+                        <br>
                         <button class='btn btn-primary' type='submit'>Add New Activity</button>
                     </form>
                 </div>
 
         </footer>
-
+    </div>
 
 </body>
 

@@ -85,6 +85,36 @@ body {
     padding: 0px 10px;
 }
 
+.activity-list {
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+}
+
+.panel > .list-group .list-group-item {
+    /* border-top: 1px solid rgb(204, 204, 204); */
+    /*padding-left: 100px*/
+}
+
+.activity-img {
+    margin-left: 8px;
+    /*width: 100px;*/
+    height: 100px;
+}
+
+.activity-name {
+    font-family: "Gill Sans MT", sans-serif;
+    font-size: 22px;
+    font-style: bold;
+    color: #111111;
+}
+
+.activity-info {
+    font-family: "Gill Sans MT", sans-serif;
+    font-size: 16px;
+    color: #818181;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 
 @media screen and (max-height: 450px) {
