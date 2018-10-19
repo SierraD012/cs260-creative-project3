@@ -23,7 +23,6 @@ app.controller('mainController', function($scope) {
                     parsed.push(value2);
                 })
             })
-            console.log("should still get here");
             $scope.activities = parsed;
             afterDataRetrieval($scope);
         })
@@ -39,12 +38,11 @@ This runs the populate and add activity functions
 This is the majority of the work for updating the html
 */
 function afterDataRetrieval($scope) {
-    console.log("entering afterDataRetrieval function");
-
-
+    
     $scope.addNewActivity = function(activity) {
         console.log(">AddNewActivity: called")
-
+        
+        
         var newActivity = {
             name: activity.name,
             category: activity.category,
@@ -80,15 +78,15 @@ function activityDirective() {
         replace: 'true',
         template: (
             '<div class="row">' +
-            '<a href={{activity.link}} target="_blank">' +
-            '<img class="activity-img" ng-src={{activity.imageUrl}} />' +
-            '</a>' +
-            '<div class="col">' +
-            '<span class="activity-name">{{activity.name}}</span>' +
-            '<br>' +
-            '<span class="activity-info">{{activity.description}}</span>' +
-            '<div class="clearfix"></div>' +
-            '</div>' +
+                '<a href={{activity.link}} target="_blank">' +
+                    '<img class="activity-img" ng-src={{activity.imageUrl}} />' +
+                '</a>' +
+                '<div class="col">' +
+                    '<span class="activity-name">{{activity.name}}</span>' +
+                    '<br>' +
+                    '<span class="activity-info">{{activity.description}}</span>' +
+                    '<div class="clearfix"></div>' +
+                '</div>' +
             '</div>'
         ),
         link: link
