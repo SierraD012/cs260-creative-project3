@@ -23,8 +23,11 @@ app.controller('mainController', function($scope) {
 });
 
 function afterDataRetrieval($scope, parsed){
-    console.log("We are in the new function");
-   // $scope.activities = parsed;
+    console.log("entering afterDataRetrieval function");
+
+    $scope.populate = function(){
+        
+    }
 
     $scope.addNewActivity = function(activity) {
         console.log(">AddNewActivity: called")
@@ -42,4 +45,24 @@ function afterDataRetrieval($scope, parsed){
     };
 }
 
+app.directive('activity', activityDirective);
+
+function activityDirective() {
+    return {
+      scope: {
+          user: '='
+      },
+      restrict: 'E',
+      replace: true,
+      template: (
+          
+        ),
+        link: link
+    };
+    function link(scope){
+        if(!scope.user.imageUrl){
+            scope.user.imageUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/BYU_Cougars_logo.svg/2000px-BYU_Cougars_logo.svg.png';
+        }
+    }
+}
 
