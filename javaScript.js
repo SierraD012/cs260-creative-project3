@@ -38,8 +38,7 @@ This is the majority of the work for updating the html
 */
 function afterDataRetrieval($scope){
     console.log("entering afterDataRetrieval function");
-    console.log($scope.activities);
-    
+
 
     $scope.addNewActivity = function(activity) {
         console.log(">AddNewActivity: called")
@@ -47,6 +46,7 @@ function afterDataRetrieval($scope){
         var newActivity = {
             name: activity.name,
             category: activity.category,
+            link: "",
             imageUrl: activity.imageUrl,
             description: activity.description
         }
@@ -54,7 +54,7 @@ function afterDataRetrieval($scope){
         $scope.activities.push(newActivity);
         
 
-        console.log(">ActivitiesList length= " + parsed.length);
+        console.log(">ActivitiesList length= " + $scope.activities.length);
     };
 }
 
@@ -72,7 +72,17 @@ function activityDirective() {
       restrict: 'E',
       replace: true,
       template: (
-          
+          '<div class="row">' +
+              '<a href={{actvity.link}} target="_blank">' +
+                  '<img class="activity-img" ng-src={{activity.imageUrl}} />' +
+                '</a>' +
+              '<div class="col">' +
+                  '<span class="activity-name">{{activity.name}}</span>' +
+                  '<br>' +
+                  '<span class="activity-info">{{activity.description}}</span>' +
+                  '<div class="clearfix"></div>' +
+                '</div>' +
+            '</div>'
         ),
         link: link
     };

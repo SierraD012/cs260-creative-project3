@@ -27,7 +27,7 @@
 
     <div class="sidenav">
         <!-- Don't change these a href, that will mess with how it looks -->
-        <a href="" onClick="getCategory('Outdoors')">Outdoors</a>
+        <a href="" onClick="setCategory('Outdoors')">Outdoors</a>
         <a href="">Food</a>
         <a href="">Artsy</a>
         <a href="">Sports/Games</a>
@@ -47,6 +47,8 @@
                 
                     <li ng-repeat='activity in activities' class="list-group-item">  <!-- ng-repeat='activity in activities'-->
                         <!-- put activity Directive tag here-->
+                        <activities user='activity'>
+                            
                     <!-- <div class="row">
                           <a href="https://quarryclimbing.com/" target="_blank">
                               <img class="activity-img" ng-src="https://www.provo-utah.us/uploads/7/8/6/6/7866822/dsc-0521_orig.jpg" />
@@ -58,6 +60,7 @@
                               <div class="clearfix"></div>
                             </div>
                         </div> -->
+                        
                         <!-- end activity Directive tag -->
                     </li>
             </div>
