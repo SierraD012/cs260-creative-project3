@@ -40,8 +40,13 @@ This is the majority of the work for updating the html
 */
 function afterDataRetrieval($scope) {
     console.log("entering afterDataRetrieval function");
-
-
+    $scope.filterCategory = "";
+    
+    $scope.setCategory = function (categoryToBeSet){
+        $scope.filterCategory = categoryToBeSet;
+    }
+    
+    
     $scope.addNewActivity = function(activity) {
         console.log(">AddNewActivity: called")
 

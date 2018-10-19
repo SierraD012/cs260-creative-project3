@@ -28,10 +28,10 @@
 
     <div class="sidenav" height=>
          <!-- Don't change these a href, that will mess with how it looks  -->
-        <a href="" onClick="setCategory('Outdoors')">Outdoors</a>
-        <a href="">Food</a>
-        <a href="">Artsy</a>
-        <a href="">Sports/Games</a>
+        <a href="" ng-click="setCategory('Outdoors')">Outdoors</a>
+        <a href="" ng-click="setCategory('Food')">Food</a>
+        <a href="" ng-click="setCategory('Artsy')">Artsy</a>
+        <a href="" ng-click="setCategory('Sports/Games')">Sports/Games</a>
         <!-- <a href="">Classic Provo</a>  Add this one back in if we have time  -->
     </div>
 
@@ -47,7 +47,7 @@
             <div class="col-sm-offset-3 col-sm-9">
             
                     <ul class="list-group" id="activity_list" >
-                        <li ng-repeat='activity in activities' class="list-group-item">
+                        <li ng-repeat= "activity in activities | filter: {category: filterCategory}" class="list-group-item">
                             <activity activity='activity'>
                         </li>
                    </ul>
