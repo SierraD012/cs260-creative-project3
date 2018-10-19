@@ -28,8 +28,6 @@
             "imageUrl": "https://assets.simpleviewcms.com/simpleview/image/upload/crm/utahvalley/ShowImage0_309246e7-5056-a36a-0b02f14c156a770b.jpg",
             "description": "State-of-the-art recreation center with indoor track, pool, gym, and multiple basketball/raquetball courts"
         },
-        
-        
         {
             "name" : "Sundance",
             "category": "Outdoors",
@@ -66,6 +64,10 @@
             "link": "https://moa.byu.edu/events/art-after-dark-5/",
             "imageUrl": "https://universe.byu.edu/wp-content/uploads/2016/10/IMG_1400-1024x683.jpg",
             "description": "Free art show event at the BYU MOA with music and refreshments"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3d6b75e98a292084777a106f2f5ff757d1daa259
         },
         {
             "name" : "Covey Center for the Arts",
