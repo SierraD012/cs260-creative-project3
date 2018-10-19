@@ -24,7 +24,8 @@ app.controller('mainController', function($scope) {
                 })
             })
             console.log("should still get here");
-            afterDataRetrieval($scope, parsed);
+            $scope.activities = parsed;
+            afterDataRetrieval($scope);
         })
         .fail(function(){
             console.log("Something went wrong loading the file.");
@@ -35,12 +36,10 @@ app.controller('mainController', function($scope) {
 This runs the populate and add activity functions
 This is the majority of the work for updating the html
 */
-function afterDataRetrieval($scope, parsed){
+function afterDataRetrieval($scope){
     console.log("entering afterDataRetrieval function");
-
-    $scope.populate = function(){
-        
-    }
+    console.log($scope.activities);
+    
 
     $scope.addNewActivity = function(activity) {
         console.log(">AddNewActivity: called")
@@ -52,7 +51,8 @@ function afterDataRetrieval($scope, parsed){
             description: activity.description
         }
         
-        parsed.push(newActivity);
+        $scope.activities.push(newActivity);
+        
 
         console.log(">ActivitiesList length= " + parsed.length);
     };
