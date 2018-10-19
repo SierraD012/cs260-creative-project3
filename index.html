@@ -21,21 +21,20 @@
     <title>Cool Stuff in Provo</title>
 </head>
 
-
 <div class="background-image"></div>
 
-<body class="content">
-
+<body class="content"  ng-app="mainActivityList" ng-controller='mainController'>
 
     <div class="sidenav">
-        <a href="#">Outdoors</a>
-        <a href="#">Food</a>
-        <a href="#">Artsy</a>
-        <a href="#">Sports/Games</a>
-        <a href="#">Classic Provo</a>
+        <!-- Don't change these a href, that will mess with how it looks -->
+        <a href="" onClick="getCategory('Outdoors')">Outdoors</a>
+        <a href="">Food</a>
+        <a href="">Artsy</a>
+        <a href="">Sports/Games</a>
+        <!-- <a href="">Classic Provo</a> Add this one back in if we have time -->
     </div>
 
-    <div class="main" ng-app="mainActivityList" ng-controller='mainController'>
+    <div class="main">
         <div class="jumbotron">  <!-- It'd be nice if we could make this thinner -->
             <h1>Cool Stuff to Do Around Provo</h1>
             <h3><small>The Best Guide Ever</small></h3>
@@ -44,8 +43,8 @@
 
 
         <div class="activityDisplay" >
-
             <div class="col-sm-offset-3 col-sm-9">
+                
                     <!-- put activity Directive tag here-->
                     <li class="list-group-item">
                         <div class="row">
@@ -53,9 +52,9 @@
                               <img class="activity-img" ng-src="https://www.provo-utah.us/uploads/7/8/6/6/7866822/dsc-0521_orig.jpg" />
                             </a>
                           <div class="col">
-                              <span class="activity-name">ACTIVITY</span>
+                              <span class="activity-name">Activity Title</span>
                               <br>
-                              <span class="activity-info">INFO</span>
+                              <span class="activity-info">Activity Description</span>
                               <div class="clearfix"></div>
                             </div>
                         </div>
@@ -80,8 +79,8 @@
                         <button class='btn btn-primary' type='submit'>Add New Activity</button>
                     </form>
                 </div>
-
         </footer>
+        
     </div>
 
 </body>
