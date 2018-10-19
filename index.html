@@ -45,9 +45,9 @@
         <div class="activityDisplay" >
             <div class="col-sm-offset-3 col-sm-9">
                 
-                    <!-- put activity Directive tag here-->
-                    <li class="list-group-item">
-                        <div class="row">
+                    <li ng-repeat='activity in activities' class="list-group-item">  <!-- ng-repeat='activity in activities'-->
+                        <!-- put activity Directive tag here-->
+                    <!-- <div class="row">
                           <a href="https://quarryclimbing.com/" target="_blank">
                               <img class="activity-img" ng-src="https://www.provo-utah.us/uploads/7/8/6/6/7866822/dsc-0521_orig.jpg" />
                             </a>
@@ -57,9 +57,9 @@
                               <span class="activity-info">Activity Description</span>
                               <div class="clearfix"></div>
                             </div>
-                        </div>
+                        </div> -->
+                        <!-- end activity Directive tag -->
                     </li>
-                    <!-- end activity Directive tag -->
             </div>
         </div>
 
@@ -71,7 +71,14 @@
                     <form name='userForm' ng-submit='addNewActivity(newActivityForm)'>
                         <input class="column" placeholder='Name' ng-model='newActivityForm.name' />
                         <!-- The category should preferrably be a drop down menu, so they can't type just anything in.-->
-                        <input class="column" placeholder='Category' ng-model='newActivityForm.category' />
+                          <select name="category" ng-model='newActivityForm.category'>
+                            <option value="" selected disabled hidden>Choose Category</option>
+                            <option value="outdoors">Outdoors</option>
+                            <option value="food">Food</option>
+                            <option value="artsy">Artsy</option>
+                            <option value="sports_games">Sports/Games</option>
+                          </select>
+                        <!-- <input class="column" placeholder='Category' ng-model='newActivityForm.category' /> Old version of category input-->
                         <input class="column" placeholder='Image URL' ng-model='newActivityForm.imageUrl' />
                         <input class="column" placeholder='Description' ng-model='newActivityForm.description' />
                         <br>
