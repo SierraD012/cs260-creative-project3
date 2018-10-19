@@ -28,17 +28,10 @@
 
     <div class="sidenav" height=>
          <!-- Don't change these a href, that will mess with how it looks  -->
-<<<<<<< HEAD
-        <a href="" onClick="setCategory('Outdoors')">Outdoors</a>
-        <a href="" onClick="setCategory('Food')">Food</a>
-        <a href="" onClick="setCategory('Artsy')">Artsy</a>
-        <a href="" onClick="setCategory('Sports/Games')">Sports/Games</a>
-=======
         <a href="" ng-click="setCategory('Outdoors')">Outdoors</a>
         <a href="" ng-click="setCategory('Food')">Food</a>
         <a href="" ng-click="setCategory('Artsy')">Artsy</a>
         <a href="" ng-click="setCategory('Sports/Games')">Sports/Games</a>
->>>>>>> 2d0bfa6718e244d7e1a49327ef1bae77f81f4f6b
         <!-- <a href="">Classic Provo</a>  Add this one back in if we have time  -->
     </div>
 
@@ -70,7 +63,7 @@
                     <form name='userForm' ng-submit='addNewActivity(newActivityForm)'>
                         <input class="column" placeholder='Name' ng-model='newActivityForm.name' />
                         <!-- The category should preferrably be a drop down menu, so they can't type just anything in.-->
-                          <select name="category" ng-model='newActivityForm.category'>
+                          <select required name="category" ng-model='newActivityForm.category'>
                             <option value="" selected disabled hidden>Choose Category</option>
                             <option value="outdoors">Outdoors</option>
                             <option value="food">Food</option>

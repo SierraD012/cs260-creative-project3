@@ -38,20 +38,14 @@ This runs the populate and add activity functions
 This is the majority of the work for updating the html
 */
 function afterDataRetrieval($scope) {
-<<<<<<< HEAD
-=======
-    console.log("entering afterDataRetrieval function");
     $scope.filterCategory = "";
     
     $scope.setCategory = function (categoryToBeSet){
         $scope.filterCategory = categoryToBeSet;
     }
-    
->>>>>>> 2d0bfa6718e244d7e1a49327ef1bae77f81f4f6b
-    
+
     $scope.addNewActivity = function(activity) {
         console.log(">AddNewActivity: called")
-        
         
         var newActivity = {
             name: activity.name,
