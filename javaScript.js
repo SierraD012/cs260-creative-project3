@@ -52,14 +52,14 @@ function afterDataRetrieval($scope) {
             imageUrl: activity.imageUrl,
             description: activity.description
         }
-
+        
         $scope.activities.push(newActivity)
+        
         activity.name = "";
         activity.category = "";
         activity.link = "";
         activity.imageUrl = "";
         activity.description = "";
-
 
         console.log(">ActivitiesList length= " + $scope.activities.length);
     };

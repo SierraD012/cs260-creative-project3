@@ -25,13 +25,14 @@
 
 <body class="content"  ng-app="mainActivityList" ng-controller='mainController'>
 
+
     <div class="sidenav" height=>
-        <!-- Don't change these a href, that will mess with how it looks -->
+         <!-- Don't change these a href, that will mess with how it looks  -->
         <a href="" onClick="setCategory('Outdoors')">Outdoors</a>
         <a href="">Food</a>
         <a href="">Artsy</a>
         <a href="">Sports/Games</a>
-        <!-- <a href="">Classic Provo</a> Add this one back in if we have time -->
+        <!-- <a href="">Classic Provo</a>  Add this one back in if we have time  -->
     </div>
 
     <div class="main">
@@ -44,7 +45,7 @@
 
         <div class="activityDisplay" >
             <div class="col-sm-offset-3 col-sm-9">
-                
+            
                     <ul class="list-group" id="activity_list" >
                         <li ng-repeat='activity in activities' class="list-group-item">
                             <activity activity='activity'>
@@ -54,7 +55,7 @@
         </div>
 
         <br><br>
-    
+        
         <footer class="footer">
                 <hr>
                 <h2>Add New Activity</h2>
